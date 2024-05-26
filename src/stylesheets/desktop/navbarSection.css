@@ -1,0 +1,73 @@
+.navsection {
+  position: fixed;
+  top: 0;
+  display: flex;
+  background-color: black;
+  padding-left: 10%;
+  padding-right: 10%;
+  align-items: center;
+}
+
+.logoSection {
+  display: flex;
+  width: 20%;
+}
+
+.logo {
+  width: 100%;
+}
+
+.menuIcon-Section {
+  display: none;
+}
+
+.menuSection {
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuLinks-Section {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuLinks {
+  display: flex;
+  text-decoration: none;
+  color: #b1b1b1;
+  align-items: center;
+  font-weight: 500;
+}
+
+.menuLinks.active,
+.menuLinks:hover {
+  color: #ae9401;
+  transition: color 0.5s;
+}
+
+.token-section {
+  width: 15%;
+}
+
+.token-btn {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: #ae9401;
+  text-decoration: none;
+  display: flex;
+}
+
+.token-icon {
+  margin-left: -50%;
+}
+
+.token-icon:hover {
+  color: #b1b1b1;
+  transition: color 0.5s;
+}

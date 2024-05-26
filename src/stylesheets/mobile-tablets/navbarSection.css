@@ -1,0 +1,109 @@
+@media screen and (max-width: 768px) {
+  .navsection {
+    height: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    right: 0;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .logoSection {
+    display: flex;
+    width: 60%;
+  }
+
+  .menuIcon-Section {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+    color: #fff;
+    align-items: center;
+  }
+
+  .show {
+    display: flex;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .menu-icons {
+    font-size: 2.4rem;
+    color: #ae9401;
+  }
+
+  .menuLinks-icons {
+    font-size: 2.4rem;
+    padding-right: 10px;
+  }
+
+  .menu-btn {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+
+  .menuSection {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #000;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.5s;
+    gap: 10px;
+    z-index: 2;
+  }
+
+  .menuLinks-Section {
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+  }
+
+  .menuLinks {
+    border-bottom: 1px solid #ae9401;
+    width: 100%;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+  }
+
+  .token-section {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 10%;
+  }
+
+  .token-btn {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    background-color: rgba(139, 69, 19, 0);
+  }
+
+  .token-icon {
+    font-size: 2rem;
+    background-color: rgb(48, 48, 48);
+    width: 100%;
+    padding: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .navsection {
+    padding-left: 3.5rem;
+  }
+}
