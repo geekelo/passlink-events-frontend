@@ -10,6 +10,7 @@ function NavSection() {
       <NavLink to="/" className="logoSection">
         <img className="logo" src={logo} alt="logo" />
       </NavLink>
+
       {/* Menu Section */}
       <div className="menuSection">
         {/* Menu items section */}
@@ -32,6 +33,8 @@ function NavSection() {
             <span>Organizers</span>
           </NavLink>
         </section>
+
+        {/* Token  */}
         <section className="token-section">
           <button type="button" className="token-btn">
             <i className="material-icons registered-events-icon">passkey</i>
