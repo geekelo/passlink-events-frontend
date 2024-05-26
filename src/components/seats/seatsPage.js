@@ -4,6 +4,6 @@ function SeatsPage() {
       <h1>Seats Page</h1>
     </div>
   );
-};
+}
 
 export default SeatsPage;

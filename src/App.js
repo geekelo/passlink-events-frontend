@@ -1,7 +1,11 @@
 import React from 'react';
-import NavbarSection from './navs/navbarSection';
 import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
+import NavbarSection from './components/nav/navbarSection';
+import EventsPage from './components/events/eventsPage';
+import SeatsPage from './components/seats/seatsPage';
+import OrganizersPage from './components/organizers/organizersPage';
+import FooterSection from './components/footer/footerSection';
 
 function App() {
   return (
@@ -9,11 +13,12 @@ function App() {
       <Router>
         <NavbarSection />
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/events" element={<Events />} />
-          <Route path="/seats" element={<Seats />} />
-          <Route path="/organizers" element={<Organizers />} />
+          <Route path="/" element={<EventsPage />} />
+          <Route path="/events" element={<EventsPage />} />
+          <Route path="/seats" element={<SeatsPage />} />
+          <Route path="/organizers" element={<OrganizersPage />} />
         </Routes>
+        <FooterSection />
       </Router>
     </div>
   );
