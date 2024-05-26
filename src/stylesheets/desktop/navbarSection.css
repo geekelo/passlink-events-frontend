@@ -5,6 +5,7 @@
   background-color: black;
   padding-left: 10%;
   padding-right: 10%;
+  align-items: center;
 }
 
 .logoSection {
@@ -16,19 +17,23 @@
   width: 100%;
 }
 
+.menuIcon-Section {
+  display: none;
+}
+
 .menuSection {
   display: flex;
   width: 80%;
   align-items: center;
-  gap: 40px;
+  justify-content: center;
 }
 
 .menuLinks-Section {
   display: flex;
-  width: 60%;
+  width: 100%;
   height: 100%;
-  gap: 20px;
-  justify-content: flex-end;
+  gap: 40px;
+  justify-content: center;
   align-items: center;
 }
 
@@ -47,17 +52,22 @@
 }
 
 .token-section {
-  width: 30%;
+  width: 15%;
 }
 
 .token-btn {
-  background-color: rgba(174, 148, 1, 0);
+  background-color: rgba(0, 0, 0, 0);
   border: none;
-  color:#ae9401;
+  color: #ae9401;
   text-decoration: none;
+  display: flex;
 }
 
-.token-btn:hover {
+.token-icon {
+  margin-left: -50%;
+}
+
+.token-icon:hover {
   color: #b1b1b1;
   transition: color 0.5s;
 }
