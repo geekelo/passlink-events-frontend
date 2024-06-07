@@ -5,15 +5,24 @@ import {
   faLocationDot,
   faCalendarAlt,
   faFilter,
+  faEye,
+  faEyeSlash,
 } from '@fortawesome/free-solid-svg-icons';
 import '../../stylesheets/desktop/hideDateIcon.css';
 import '../../stylesheets/desktop/filterSection.css';
 import '../../stylesheets/mobile-tablets/filterSection.css';
 
 function FilterSection() {
+  let filterSectionState;
   const toggleFilterSection = () => {
     const filterFields = document.getElementsByClassName('filterFields')[0];
-    filterFields.classList.toggle('hideFilter');
+    const filterFieldsClassArray = filterFields.classList;
+    filterFieldsClassArray.toggle('hideFilter');
+    if (filterFieldsClassArray.contains('hideFilter')) {
+      filterSectionState = 'yes';
+    } else {
+      filterSectionState = 'no';
+    }
   };
 
   return (
@@ -81,6 +90,11 @@ function FilterSection() {
       </div>
       <div>
         <button type="button" className="filterButton" onClick={toggleFilterSection}>
+          {
+            filterSectionState === 'yes'
+              ? (<FontAwesomeIcon icon={faEyeSlash} />)
+              : (<FontAwesomeIcon icon={faEye} />)
+          }
           Filter
         </button>
       </div>
