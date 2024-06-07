@@ -14,21 +14,27 @@ import '../../stylesheets/mobile-tablets/filterSection.css';
 import { useState } from 'react';
 
 function FilterSection() {
-  const [filterSectionState, setFilterSectionState] = useState('no');
+  const [filterSectionState, setFilterSectionState] = useState('yes');
   const toggleFilterSection = () => {
     const filterFields = document.getElementsByClassName('filterFields')[0];
     const filterFieldsClassArray = filterFields.classList;
     filterFieldsClassArray.toggle('hideFilter');
     if (filterFieldsClassArray.contains('hideFilter')) {
+      setTimeout(() => {
+        filterFields.style.display = 'none';
+      }, 800);
       setFilterSectionState('yes');
     } else {
+      setTimeout(() => {
+        filterFields.style.display = 'flex';
+      }, 500);
       setFilterSectionState('no');
     }
   };
 
   return (
     <div className="filterContainter">
-      <div className="filterFields">
+      <div className="filterFields hideFilter">
         <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faSearch} />
@@ -96,7 +102,7 @@ function FilterSection() {
               ? (<FontAwesomeIcon icon={faEyeSlash} />)
               : (<FontAwesomeIcon icon={faEye} />)
           }
-          Filter
+          &nbsp;Filter
         </button>
       </div>
     </div>
