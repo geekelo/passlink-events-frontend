@@ -1,6 +1,7 @@
 /* Styling for the App container */
 .App {
   text-align: center;
+  height: 100vh;
   background:
     conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0),
     conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0) calc(1 * 31px) calc(3 * 31px),

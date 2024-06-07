@@ -11,17 +11,18 @@ import {
 import '../../stylesheets/desktop/hideDateIcon.css';
 import '../../stylesheets/desktop/filterSection.css';
 import '../../stylesheets/mobile-tablets/filterSection.css';
+import { useState } from 'react';
 
 function FilterSection() {
-  let filterSectionState;
+  const [filterSectionState, setFilterSectionState] = useState('no');
   const toggleFilterSection = () => {
     const filterFields = document.getElementsByClassName('filterFields')[0];
     const filterFieldsClassArray = filterFields.classList;
     filterFieldsClassArray.toggle('hideFilter');
     if (filterFieldsClassArray.contains('hideFilter')) {
-      filterSectionState = 'yes';
+      setFilterSectionState('yes');
     } else {
-      filterSectionState = 'no';
+      setFilterSectionState('no');
     }
   };
 
