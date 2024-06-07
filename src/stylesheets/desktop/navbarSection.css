@@ -8,6 +8,7 @@
   align-items: center;
 }
 
+/* LOGO SECTION */
 .logoSection {
   display: flex;
   width: 20%;
@@ -17,10 +18,12 @@
   width: 100%;
 }
 
+/* MENU ICONS SECTION */
 .menuIcon-Section {
   display: none;
 }
 
+/* MENULINKS SECTION */
 .menuSection {
   display: flex;
   width: 80%;
@@ -51,7 +54,10 @@
   transition: color 0.5s;
 }
 
+/* TOKEN SECTION */
 .token-section {
+  display: flex;
+  justify-content: flex-end;
   width: 15%;
 }
 
