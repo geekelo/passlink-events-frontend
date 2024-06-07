@@ -22,15 +22,17 @@ function FilterSection() {
     const filterFields = document.getElementsByClassName('filterFields')[0];
     const filterFieldsClassArray = filterFields.classList;
     filterFieldsClassArray.toggle('hideFilter');
-    
-    // If the filter section is being hidden, use a timeout to set display to 'none' after the fade-out animation
+
+    // If the filter section is being hidden, use a timeout to set display
+    // to 'none' after the fade-out animation
     if (filterFieldsClassArray.contains('hideFilter')) {
       setTimeout(() => {
         filterFields.style.display = 'none';
       }, 800); // Adjust the timeout duration to match the animation duration
       setFilterSectionState('yes');
     } else {
-      // If the filter section is being shown, set display to 'flex' and trigger the slide-down animation
+      // If the filter section is being shown, set display to 'flex' and
+      // trigger the slide-down animation
       filterFields.style.display = 'flex';
       setFilterSectionState('no');
     }
