@@ -21,19 +21,19 @@ function FilterSection() {
   const toggleFilterSection = () => {
     const filterFields = document.getElementsByClassName('filterFields')[0];
     const filterFieldsClassArray = filterFields.classList;
-    filterFieldsClassArray.toggle('hideFilter');
+    filterFieldsClassArray.toggle('hideFilterAnimmation');
 
     // If the filter section is being hidden, use a timeout to set display
     // to 'none' after the fade-out animation
-    if (filterFieldsClassArray.contains('hideFilter')) {
+    if (filterFieldsClassArray.contains('hideFilterAnimmation') || filterSectionState === 'no') {
       setTimeout(() => {
-        filterFields.style.display = 'none';
+        filterFieldsClassArray.add('hideFilter');
       }, 800); // Adjust the timeout duration to match the animation duration
       setFilterSectionState('yes');
     } else {
       // If the filter section is being shown, set display to 'flex' and
       // trigger the slide-down animation
-      filterFields.style.display = 'flex';
+      filterFieldsClassArray.remove('hideFilter');
       setFilterSectionState('no');
     }
   };

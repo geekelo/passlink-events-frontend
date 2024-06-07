@@ -6,6 +6,7 @@
   align-items: center;
   padding: 0.5rem 0;
   position: fixed;
+  margin-top: 0;
   top: 10%;
   width: 100%;
   font-size: 0.8em;
@@ -130,10 +131,14 @@
 }
 
 /* FILTER TOGGLE STYLES */
-.hideFilter {
+.hideFilterAnimmation {
   opacity: 1;
   transform: translateY(0);
   animation: fadeOut 1s; /* Apply the slideUp animation */
+}
+
+.hideFilter {
+  display: none;
 }
 
 @keyframes fadeOut {
