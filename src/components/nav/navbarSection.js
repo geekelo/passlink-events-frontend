@@ -48,21 +48,27 @@ function NavSection() {
         {/* Menu items section */}
         <section className="menuLinks-Section">
           {/* Link to Events page */}
+          <a href="https://passlink.geekelo.com.ng" className="menuLinks">
+            <i className="material-icons menuLinks-icons">home</i>
+            <span>&nbsp;Home</span>
+          </a>
+
+          {/* Link to Events page */}
           <NavLink to="/events" className="menuLinks">
             <i className="material-icons menuLinks-icons">calendar_month</i>
-            <span>Events</span>
+            <span>&nbsp;Events</span>
           </NavLink>
 
           {/* Link to Registered Events page */}
           <NavLink to="/seats" className="menuLinks">
             <i className="material-icons menuLinks-icons">event_seat</i>
-            <span>Seats</span>
+            <span>&nbsp;Seats</span>
           </NavLink>
 
           {/* Link to Organizers page */}
           <NavLink to="/organizers" className="menuLinks">
             <i className="material-icons menuLinks-icons">settings_accessibility</i>
-            <span>Organizers</span>
+            <span>&nbsp;Organizers</span>
           </NavLink>
         </section>
       </div>

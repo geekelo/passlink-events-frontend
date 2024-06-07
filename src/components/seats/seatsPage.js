@@ -1,7 +1,9 @@
+import FilterSection from '../nav/filterSection';
+
 function SeatsPage() {
   return (
     <div className="seatsPage">
-      <h1>Seats Page</h1>
+      <FilterSection />
     </div>
   );
 }

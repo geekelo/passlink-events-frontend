@@ -13,15 +13,16 @@ function FilterSection() {
   return (
     <div className="filterContainter">
       <div className="filterFields">
-        <div>
+        <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faSearch} />
             &nbsp;
             Event Name:
           </p>
-          <label htmlFor="search" aria-controls="search">
+          <label htmlFor="search" aria-controls="search" className="filterSection">
             <FontAwesomeIcon icon={faFilter} />
             <input
+              className="fieldInput"
               id="search"
               name="search"
               type="search"
@@ -30,15 +31,16 @@ function FilterSection() {
             />
           </label>
         </div>
-        <div className="date">
+        <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faCalendarAlt} />
             &nbsp;
             Date:
           </p>
-          <label htmlFor="date" aria-controls="date">
+          <label htmlFor="date" aria-controls="date" className="filterSection">
             <FontAwesomeIcon icon={faFilter} />
             <input
+              className="fieldInput"
               id="date"
               name="date"
               type="date"
@@ -46,6 +48,7 @@ function FilterSection() {
             />
             <FontAwesomeIcon icon={faMinus} />
             <input
+              className="fieldInput"
               id="second-date"
               name="second-date"
               type="date"
@@ -53,15 +56,15 @@ function FilterSection() {
             />
           </label>
         </div>
-        <div>
+        <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faLocationDot} />
             &nbsp;
             Location:
           </p>
-          <label htmlFor="location">
+          <label htmlFor="location" className="filterSection">
             <FontAwesomeIcon icon={faFilter} />
-            <select id="location" name="location">
+            <select id="location" name="location" className="fieldSelect">
               <option disabled>LOCATION</option>
               <option value="all">All</option>
               <option value="Onsite">Onsite</option>
