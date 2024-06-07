@@ -1,6 +1,7 @@
 /* Parent container styles */
 .filterContainter {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   position: fixed;
   top: 10%;
@@ -12,7 +13,7 @@
 
 /* Form container styles responsible for how the fields are aligned */
 .filterFields {
-  display: none;
+  display: flex;
   padding: 1rem 2rem;
   padding-top: 0;
   width: 80%;
@@ -112,6 +113,6 @@
   outline: none;
 }
 
-.hide {
+.hideFilter {
   display: none;
 }

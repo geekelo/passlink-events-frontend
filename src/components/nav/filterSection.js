@@ -12,8 +12,8 @@ import '../../stylesheets/mobile-tablets/filterSection.css';
 
 function FilterSection() {
   const toggleFilterSection = () => {
-    const filterFields = document.getElementsByClassName[0]('filterFields');
-    filterFields.classList.toggle('hide');
+    const filterFields = document.getElementsByClassName('filterFields')[0];
+    filterFields.classList.toggle('hideFilter');
   };
 
   return (

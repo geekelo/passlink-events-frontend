@@ -1,8 +1,4 @@
 @media screen and (max-width: 768px) {
-  .filterContainter {
-
-  }
-
   .filterFields {
     flex-direction: column;
     width: 90%;
