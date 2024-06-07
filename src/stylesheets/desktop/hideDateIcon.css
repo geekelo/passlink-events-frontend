@@ -1,0 +1,29 @@
+/* Hide the default date picker icon in Firefox */
+input[type="date"] {
+  -moz-appearance: textfield;
+  position: relative;
+  z-index: 2;
+  background: transparent;
+}
+
+/* Hide the default date picker icon in Chrome, Safari, and Edge */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  position: absolute;
+  left: 0; /* Ensures the calendar still shows up */
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* Container to position the icon and input field */
+.date-input-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Remove the border and outline on focus */
+input[type="date"]:focus {
+  border: none;
+  outline: none;
+}

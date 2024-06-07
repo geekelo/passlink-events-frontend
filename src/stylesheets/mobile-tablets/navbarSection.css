@@ -1,4 +1,6 @@
+/* MOBILE DEVICES */
 @media screen and (max-width: 768px) {
+  /* MENU SECTION */
   .navsection {
     height: 10%;
     padding-left: 5%;
@@ -11,11 +13,13 @@
     box-sizing: border-box;
   }
 
+  /* LOGO SECTION */
   .logoSection {
     display: flex;
     width: 60%;
   }
 
+  /* MENU ICONS SECTION */
   .menuIcon-Section {
     display: flex;
     justify-content: flex-end;
@@ -47,6 +51,7 @@
     border: none;
   }
 
+  /* MENULINKS SECTION */
   .menuSection {
     position: absolute;
     top: 100%;
@@ -56,7 +61,7 @@
     width: 100%;
     transition: all 0.5s;
     gap: 10px;
-    z-index: 2;
+    z-index: 4;
   }
 
   .menuLinks-Section {
@@ -76,6 +81,7 @@
     padding-left: 2rem;
   }
 
+  /* TOKEN SECTION */
   .token-section {
     position: fixed;
     right: 0;
@@ -102,6 +108,7 @@
   }
 }
 
+/* TABLETS */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
   .navsection {
     padding-left: 3.5rem;

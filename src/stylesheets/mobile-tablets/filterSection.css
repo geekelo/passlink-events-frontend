@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  .filterFields {
+    flex-direction: column;
+    width: 90%;
+    gap: 20px;
+  }
+
+  .formfields-sections {
+    width: 100%;
+  }
+}
