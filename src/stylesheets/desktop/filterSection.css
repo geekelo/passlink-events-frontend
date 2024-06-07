@@ -12,7 +12,7 @@
 
 /* Form container styles responsible for how the fields are aligned */
 .filterFields {
-  display: flex;
+  display: none;
   padding: 1rem 2rem;
   padding-top: 0;
   width: 80%;
@@ -90,8 +90,8 @@
   transition: color 5000000s ease-in-out 0s; /* Hack to prevent default color styles for some seconds */
   border: 1px solid rgb(46, 42, 3) !important;
   background-color: rgb(13, 12, 0) !important;
-  -webkit-box-shadow: 0 0 0px 1000px rgb(46, 42, 3) inset !important;
-  box-shadow: 0 0 0px 1000px rgb(46, 42, 3) inset !important;
+  -webkit-box-shadow: 0 0 0 1000px rgb(46, 42, 3) inset !important;
+  box-shadow: 0 0 0 1000px rgb(46, 42, 3) inset !important;
 }
 
 /* Dropdown field styles */
@@ -110,4 +110,8 @@
 .fieldSelect:focus {
   border: none;
   outline: none;
+}
+
+.hide {
+  display: none;
 }
