@@ -11,6 +11,7 @@
     top: 0;
     justify-content: center;
     box-sizing: border-box;
+    z-index: 3;
   }
 
   /* LOGO SECTION */
@@ -61,7 +62,7 @@
     width: 100%;
     transition: all 0.5s;
     gap: 10px;
-    z-index: 4;
+    z-index: 6;
   }
 
   .menuLinks-Section {
@@ -85,7 +86,7 @@
   .token-section {
     position: fixed;
     right: 0;
-    top: 50%;
+    top: 55%;
     width: 10%;
   }
 

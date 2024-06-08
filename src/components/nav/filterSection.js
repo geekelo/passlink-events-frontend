@@ -14,26 +14,37 @@ import '../../stylesheets/mobile-tablets/filterSection.css';
 import { useState } from 'react';
 
 function FilterSection() {
-  const [filterSectionState, setFilterSectionState] = useState('no');
+  // State to track whether the filter section is visible or hidden
+  const [filterSectionState, setFilterSectionState] = useState('yes');
+
+  // Function to toggle the visibility of the filter section
   const toggleFilterSection = () => {
     const filterFields = document.getElementsByClassName('filterFields')[0];
     const filterFieldsClassArray = filterFields.classList;
-    filterFieldsClassArray.toggle('hideFilter');
-    if (filterFieldsClassArray.contains('hideFilter')) {
+    filterFieldsClassArray.toggle('hideFilterAnimmation');
+
+    // If the filter section is being hidden, use a timeout to set display
+    // to 'none' after the fade-out animation
+    if (filterFieldsClassArray.contains('hideFilterAnimmation') || filterSectionState === 'no') {
+      setTimeout(() => {
+        filterFieldsClassArray.add('hideFilter');
+      }, 800); // Adjust the timeout duration to match the animation duration
       setFilterSectionState('yes');
     } else {
+      // If the filter section is being shown, set display to 'flex' and
+      // trigger the slide-down animation
+      filterFieldsClassArray.remove('hideFilter');
       setFilterSectionState('no');
     }
   };
 
   return (
     <div className="filterContainter">
-      <div className="filterFields">
+      <div className="filterFields hideFilter">
         <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faSearch} />
-            &nbsp;
-            Event Name:
+            &nbsp; Event Name:
           </p>
           <label htmlFor="search" aria-controls="search" className="filterSection">
             <FontAwesomeIcon icon={faFilter} />
@@ -50,8 +61,7 @@ function FilterSection() {
         <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faCalendarAlt} />
-            &nbsp;
-            Date:
+            &nbsp; Date:
           </p>
           <label htmlFor="date" aria-controls="date" className="filterSection">
             <FontAwesomeIcon icon={faFilter} />
@@ -75,8 +85,7 @@ function FilterSection() {
         <div className="formfields-sections">
           <p>
             <FontAwesomeIcon icon={faLocationDot} />
-            &nbsp;
-            Location:
+            &nbsp; Location:
           </p>
           <label htmlFor="location" className="filterSection">
             <FontAwesomeIcon icon={faFilter} />
@@ -96,7 +105,7 @@ function FilterSection() {
               ? (<FontAwesomeIcon icon={faEyeSlash} />)
               : (<FontAwesomeIcon icon={faEye} />)
           }
-          Filter
+          &nbsp;Filter
         </button>
       </div>
     </div>
