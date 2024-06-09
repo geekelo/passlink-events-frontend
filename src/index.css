@@ -3,6 +3,7 @@
 body {
   font-family: Roboto, sans-serif;
   margin: 0; /* Margin */
+  padding: 0;
   -webkit-font-smoothing: antialiased; /* Font smoothing for WebKit */
   -moz-osx-font-smoothing: grayscale; /* Font smoothing for Firefox */
   /* stylelint-disable-next-line property-no-unknown */

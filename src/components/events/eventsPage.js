@@ -4,7 +4,7 @@ import EventCard from './eventCard';
 function EventsPage() {
   return (
     <div className="eventsPage">
-      <div className="filterSection">
+      <div className="filter-section">
         <FilterSection />
       </div>
       <div>

@@ -1,6 +1,8 @@
+import '../../stylesheets/desktop/eventCard.css';
+
 function EventCard() {
   return (
-    <div>
+    <div className="eventCardContainer">
       <div>
         <p>TITLE</p>
         <p>DESCRIPTION</p>
