@@ -1,5 +1,6 @@
 import FilterSection from '../nav/filterSection';
 import EventCard from './eventCard';
+import '../../stylesheets/desktop/eventPage.css';
 
 function EventsPage() {
   return (

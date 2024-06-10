@@ -1,4 +1,73 @@
 .eventCardContainer {
-  background-color: grey;
+  font-family: "Jost", sans-serif;
+  background-color: #fff9e0;
+  width: 30%;
+  display: flex;
+  padding-left: 1rem;
+}
+
+.col1 {
+  width: 70%;
+  color: #3b3b3b;
+  text-align: left;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.col2 {
+  width: 30%;
+  border-left: 1px solid rgba(0, 0, 0, 0.118);
+}
+
+.event-title {
+  line-height: 1.5rem;
+}
+
+.brand-color {
+  border-radius: 50%;
+  background-color: #a1c458;
+  width: 8%;
+}
+
+.organizers {
+  margin-top: -30px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.eventcard-description {
+  width: 80%;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.speakers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.speaker-names {
+  width: 80%;
+  font-size: 0.7rem;
+}
+
+.location-tag {
+  background-color: #f1c550;
   width: 50%;
+  margin: auto;
+  margin-right: -1%;
+  padding: 5%;
+  font-size: 0.8rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.date {
+  font-size: 0.8rem;;
+}
+
+.time {
+  font-size: 0.8rem;;
 }
