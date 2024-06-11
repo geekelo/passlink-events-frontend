@@ -1,0 +1,45 @@
+{
+  "data": {
+    "events": [
+      {
+        "id": 1,
+        "name": "Event 1",
+        "date": "2017-01-01",
+        "location": "ONLINE",
+        "time": "20:00",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum"
+      },
+      {
+        "id": 2,
+        "name": "Event 2",
+        "date": "2017-01-02",
+        "location": "ONLINE",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum"
+      },
+      {
+        "id": 3,
+        "name": "Event 3",
+        "date": "2017-01-03",
+        "location": "OFFLINE",
+        "time": "19:00",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum"
+      },
+      {
+        "id": 4,
+        "name": "Event 4",
+        "date": "2017-01-04",
+        "location": "OFFLINE",
+        "time": "16:00",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum"
+      },
+      {
+        "id": 5,
+        "name": "Event 5",
+        "date": "2017-01-05",
+        "location": "OFFLINE",
+        "time": "10:00",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum"
+      }
+    ]
+  }
+}
