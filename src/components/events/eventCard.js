@@ -1,8 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCalendar,
+  faCalendarAlt,
   faClock,
   faMicrophone,
+  faAnglesRight,
 } from '@fortawesome/free-solid-svg-icons';
 
 import '../../stylesheets/desktop/eventCard.css';
@@ -28,15 +29,29 @@ function EventCard() {
       </div>
       <div className="col2">
         <p className="location-tag">ONLINE</p>
-        <p className="date">
-          <FontAwesomeIcon icon={faCalendar} />
-          12-11-2024
-        </p>
+        <div className="date">
+          <p className="date-time-icon">
+            <FontAwesomeIcon icon={faCalendarAlt} className="fa-times-thin" />
+          </p>
+          <div className="dateText">
+            <p className="date-range">12-11-2024</p>
+          </div>
+        </div>
         <p className="time">
-          <FontAwesomeIcon icon={faClock} />
-          3:00pm
+          <div className="date-time-icon">
+            <FontAwesomeIcon icon={faClock} />
+          </div>
+          <div className="time-text">
+            <p>3:00PM</p>
+            <p className="timezone">GMT+1</p>
+          </div>
         </p>
-        <p>View</p>
+        <div>
+          <button type="button" className="reserve">
+            Reserve
+            <FontAwesomeIcon icon={faAnglesRight} />
+          </button>
+        </div>
       </div>
     </div>
   );

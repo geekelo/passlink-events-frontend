@@ -16,6 +16,7 @@
 
 .col2 {
   width: 30%;
+  background-color: #e9e0be;
   border-left: 1px solid rgba(0, 0, 0, 0.118);
 }
 
@@ -65,9 +66,57 @@
 }
 
 .date {
-  font-size: 0.8rem;;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1rem;
+  height: 30%;
+}
+
+.dateText {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: -25px;
+  margin-bottom: 15px;
+}
+
+.date-time-icon {
+  font-size: 2rem;
+  color: rgb(74, 67, 5);;
+}
+
+.time-text {
+  font-size: 0.9rem;
+  line-height: 0;
+ }
+
+.date-range {
+  margin: 0;
+  line-height: 0;
+}
+
+.date-year {
+  margin: 0;
+  margin-top: 1rem;
+  line-height: 0;
 }
 
 .time {
   font-size: 0.8rem;;
+}
+
+.reserve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #ea4c4c;
+  color: #fff;
+  padding: 0.5rem;
+  margin: auto;
+  gap: 0.5rem;
 }
