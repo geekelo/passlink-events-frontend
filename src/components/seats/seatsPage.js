@@ -5,7 +5,7 @@ function SeatsPage() {
     <div className="seatsPage">
       <FilterSection />
       <div>
-        
+        <p>SEATS</p>
       </div>
     </div>
   );

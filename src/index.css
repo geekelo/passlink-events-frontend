@@ -8,17 +8,17 @@ body {
   -moz-osx-font-smoothing: grayscale; /* Font smoothing for Firefox */
   /* stylelint-disable-next-line property-no-unknown */
   background:
-  conic-gradient(at 10% 50%, #0000 75%, #131313 0),
-  conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(1 * 31px) calc(3 * 31px),
-  conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(2 * 31px) calc(1 * 31px),
-  conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(3 * 31px) calc(4 * 31px),
-  conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(4 * 31px) calc(2 * 31px),
-  conic-gradient(at 50% 10%, #0000 75%, #121212 0) 0 calc(4 * 31px),
-  conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(1 * 31px) calc(2 * 31px),
-  conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(2 * 31px) 0,
-  conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(3 * 31px) calc(3 * 31px),
-  conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(4 * 31px) calc(1 * 31px),
-  #0f0f0f; /* Background gradient */
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(1 * 31px) calc(3 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(2 * 31px) calc(1 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(3 * 31px) calc(4 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(4 * 31px) calc(2 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #121212 0) 0 calc(4 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(1 * 31px) calc(2 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(2 * 31px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(3 * 31px) calc(3 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(4 * 31px) calc(1 * 31px),
+    #0f0f0f; /* Background gradient */
 
   background-size: 155px 155px; /* Background size */
 }

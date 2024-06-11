@@ -86,13 +86,13 @@
 
 .date-time-icon {
   font-size: 2rem;
-  color: rgb(74, 67, 5);;
+  color: rgb(74, 67, 5);
 }
 
 .time-text {
   font-size: 0.9rem;
   line-height: 0;
- }
+}
 
 .date-range {
   margin: 0;
@@ -106,7 +106,7 @@
 }
 
 .time {
-  font-size: 0.8rem;;
+  font-size: 0.8rem;
 }
 
 .reserve {
