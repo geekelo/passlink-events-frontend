@@ -4,6 +4,9 @@ function SeatsPage() {
   return (
     <div className="seatsPage">
       <FilterSection />
+      <div>
+        <p>SEATS</p>
+      </div>
     </div>
   );
 }

@@ -1,22 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,800;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sevillana&display=swap');
 
 body {
   font-family: Roboto, sans-serif;
   margin: 0; /* Margin */
+  padding: 0;
   -webkit-font-smoothing: antialiased; /* Font smoothing for WebKit */
   -moz-osx-font-smoothing: grayscale; /* Font smoothing for Firefox */
   /* stylelint-disable-next-line property-no-unknown */
   background:
-    conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0),
-    conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0) calc(1 * 31px) calc(3 * 31px),
-    conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0) calc(2 * 31px) calc(1 * 31px),
-    conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0) calc(3 * 31px) calc(4 * 31px),
-    conic-gradient(at 10% 50%, #0000 75%, #1d1b00a6 0) calc(4 * 31px) calc(2 * 31px),
-    conic-gradient(at 50% 10%, #0000 75%, #1d1b00a6 0) 0 calc(4 * 31px),
-    conic-gradient(at 50% 10%, #0000 75%, #1d1b00a6 0) calc(1 * 31px) calc(2 * 31px),
-    conic-gradient(at 50% 10%, #0000 75%, #1d1b00a6 0) calc(2 * 31px) 0,
-    conic-gradient(at 50% 10%, #0000 75%, #1d1b00a6 0) calc(3 * 31px) calc(3 * 31px),
-    conic-gradient(at 50% 10%, #0000 75%, #1d1b00a6 0) calc(4 * 31px) calc(1 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(1 * 31px) calc(3 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(2 * 31px) calc(1 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(3 * 31px) calc(4 * 31px),
+    conic-gradient(at 10% 50%, #0000 75%, #131313 0) calc(4 * 31px) calc(2 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #121212 0) 0 calc(4 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(1 * 31px) calc(2 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(2 * 31px) 0,
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(3 * 31px) calc(3 * 31px),
+    conic-gradient(at 50% 10%, #0000 75%, #131313 0) calc(4 * 31px) calc(1 * 31px),
     #0f0f0f; /* Background gradient */
 
   background-size: 155px 155px; /* Background size */

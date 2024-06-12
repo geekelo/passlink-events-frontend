@@ -1,0 +1,129 @@
+.eventCardContainer {
+  font-family: "Jost", sans-serif;
+  background-color: #fff9e0;
+  width: 45%;
+  display: flex;
+  padding-left: 1rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
+}
+
+.col1 {
+  width: 70%;
+  color: #3b3b3b;
+  text-align: left;
+  gap: 1rem;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.col2 {
+  width: 30%;
+  background-color: #e9e0be;
+  border-left: 1px solid rgba(0, 0, 0, 0.041);
+  padding-bottom: 0.9rem;
+  box-sizing: border-box;
+}
+
+.event-name {
+  line-height: 1.5rem;
+}
+
+.organizer-section {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+.brand-color {
+  border-radius: 60%;
+  display: flex;
+  background-color: rgba(241, 198, 80, 0.463);
+  width: 9%;
+  height: 100%;
+}
+
+.organizer {
+  color: rgba(74, 67, 5, 0.4);
+  font-size: 0.7rem;
+}
+
+.eventcard-description {
+  width: 80%;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.speakers {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.speaker-names {
+  width: 80%;
+  font-size: 0.7rem;
+}
+
+.location-tag {
+  background-color: #f1c550;
+  width: 50%;
+  margin: auto;
+  margin-right: -1%;
+  padding: 5%;
+  font-size: 0.8rem;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(74, 67, 5, 0.668);
+}
+
+.date-text {
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: -20px;
+}
+
+.date-time-icon {
+  font-size: 1rem;
+  color: rgba(74, 67, 5, 0.668);
+}
+
+.time-text {
+  font-size: 0.9rem;
+  line-height: 0;
+  margin-top: -10px;
+}
+
+.time {
+  font-size: 0.8rem;
+  margin-top: -22px;
+  margin-bottom: 2rem;
+  color: rgba(74, 67, 5, 0.668);
+}
+
+.reserve {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: rgb(74, 67, 5);
+  color: #fff;
+  padding: 0.5rem;
+  margin: auto;
+  gap: 0.5rem;
+  border-radius: 0.3rem;
+}
