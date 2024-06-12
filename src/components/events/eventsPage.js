@@ -14,8 +14,9 @@ function EventsPage() {
       <div className="filter-section">
         <FilterSection />
       </div>
+      {/* Adds a break or spacer between filter section and events section */}
       <div className="break">
-        &nbsp; {/* Adds a break or spacer between filter section and events section */}
+        &nbsp;
       </div>
       <div className="events-section">
         {/* Mapping through the event data and rendering an EventCard for each event */}
