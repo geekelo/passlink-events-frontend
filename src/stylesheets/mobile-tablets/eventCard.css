@@ -5,7 +5,7 @@
   }
 
   .col1 {
-    width: 85px;
+    width: 80%;
     gap: 0.5rem;
   }
 
@@ -18,15 +18,15 @@
   }
 
   .brand-color {
-    width: 15%;
+    width: 13%;
   }
 
   .date-text {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
   }
 
   .time-text {
-    font-size: 0.7rem;
+    font-size: 0.6rem;
     line-height: 0;
     margin-top: -10px;
   }

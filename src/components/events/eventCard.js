@@ -6,8 +6,8 @@ import {
   faMicrophone,
   faChair,
 } from '@fortawesome/free-solid-svg-icons';
-import '../../stylesheets/mobile-tablets/eventCard.css';
 import '../../stylesheets/desktop/eventCard.css';
+import '../../stylesheets/mobile-tablets/eventCard.css';
 
 function EventCard({ event }) {
   // Destructuring event properties for easier access
