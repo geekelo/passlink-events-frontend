@@ -1,7 +1,7 @@
 import FilterSection from '../nav/filterSection';
 import EventCard from './eventCard';
-import '../../stylesheets/mobile-tablets/eventPage.css';
 import '../../stylesheets/desktop/eventPage.css';
+import '../../stylesheets/mobile-tablets/eventPage.css';
 import events from '../../data/events.json';
 
 function EventsPage() {
