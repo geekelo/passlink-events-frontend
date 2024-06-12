@@ -54,19 +54,19 @@ function NavSection() {
           </a>
 
           {/* Link to Events page */}
-          <NavLink to="/events" className="menuLinks">
+          <NavLink to="/events" onClick={closeMenu} className="menuLinks">
             <i className="material-icons menuLinks-icons">calendar_month</i>
             <span>&nbsp;Events</span>
           </NavLink>
 
           {/* Link to Registered Events page */}
-          <NavLink to="/seats" className="menuLinks">
+          <NavLink to="/seats" onClick={closeMenu} className="menuLinks">
             <i className="material-icons menuLinks-icons">event_seat</i>
             <span>&nbsp;Seats</span>
           </NavLink>
 
           {/* Link to Organizers page */}
-          <NavLink to="/organizers" className="menuLinks">
+          <NavLink to="/organizers" onClick={closeMenu} className="menuLinks">
             <i className="material-icons menuLinks-icons">settings_accessibility</i>
             <span>&nbsp;Organizers</span>
           </NavLink>
