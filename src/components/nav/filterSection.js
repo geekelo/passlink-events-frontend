@@ -1,17 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
 import {
   faSearch,
   faMinus,
   faLocationDot,
   faCalendarAlt,
   faFilter,
-  faEye,
   faEyeSlash,
 } from '@fortawesome/free-solid-svg-icons';
 import '../../stylesheets/desktop/hideDateIcon.css';
 import '../../stylesheets/desktop/filterSection.css';
 import '../../stylesheets/mobile-tablets/filterSection.css';
-import { useState } from 'react';
 
 function FilterSection() {
   // State to track whether the filter section is visible or hidden
@@ -102,8 +101,8 @@ function FilterSection() {
         <button type="button" className="filterButton" onClick={toggleFilterSection}>
           {
             filterSectionState === 'yes'
-              ? (<FontAwesomeIcon icon={faEyeSlash} />)
-              : (<FontAwesomeIcon icon={faEye} />)
+              ? (<FontAwesomeIcon icon={faSearch} />)
+              : (<FontAwesomeIcon icon={faEyeSlash} />)
           }
           &nbsp;Filter
         </button>

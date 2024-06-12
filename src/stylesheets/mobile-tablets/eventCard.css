@@ -21,6 +21,12 @@
     width: 13%;
   }
 
+  .location-tag {
+    width: 60%;
+    padding: 2%;
+    font-size: 0.6rem;
+  }
+
   .date-text {
     font-size: 0.6rem;
   }
