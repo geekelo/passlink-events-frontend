@@ -1,9 +1,11 @@
 .eventCardContainer {
   font-family: "Jost", sans-serif;
   background-color: #fff9e0;
-  width: 30%;
+  width: 45%;
   display: flex;
   padding-left: 1rem;
+  border-radius: 1rem;
+  box-sizing: border-box;
 }
 
 .col1 {
@@ -11,30 +13,42 @@
   color: #3b3b3b;
   text-align: left;
   gap: 1rem;
-  justify-content: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
 }
 
 .col2 {
   width: 30%;
   background-color: #e9e0be;
-  border-left: 1px solid rgba(0, 0, 0, 0.118);
+  border-left: 1px solid rgba(0, 0, 0, 0.041);
+  padding-bottom: 0.9rem;
+  box-sizing: border-box;
 }
 
-.event-title {
+.event-name {
   line-height: 1.5rem;
 }
 
-.brand-color {
-  border-radius: 50%;
-  background-color: #a1c458;
-  width: 8%;
-}
-
-.organizers {
-  margin-top: -30px;
+.organizer-section {
+  height: 3rem;
   display: flex;
   align-items: center;
   gap: 5px;
+  padding-top: 1rem;
+  box-sizing: border-box;
+}
+
+.brand-color {
+  border-radius: 60%;
+  display: flex;
+  background-color: rgba(241, 198, 80, 0.463);
+  width: 9%;
+  height: 100%;
+}
+
+.organizer {
+  color: rgba(74, 67, 5, 0.4);
+  font-size: 0.7rem;
 }
 
 .eventcard-description {
@@ -47,6 +61,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  box-sizing: border-box;
 }
 
 .speaker-names {
@@ -71,42 +86,33 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.1rem;
-  height: 30%;
+  color: rgba(74, 67, 5, 0.668);
 }
 
-.dateText {
+.date-text {
   font-size: 0.9rem;
   display: flex;
   flex-direction: column;
   gap: 1px;
-  margin-top: -25px;
-  margin-bottom: 15px;
+  margin-top: -20px;
 }
 
 .date-time-icon {
-  font-size: 2rem;
-  color: rgb(74, 67, 5);
+  font-size: 1rem;
+  color: rgba(74, 67, 5, 0.668);
 }
 
 .time-text {
   font-size: 0.9rem;
   line-height: 0;
-}
-
-.date-range {
-  margin: 0;
-  line-height: 0;
-}
-
-.date-year {
-  margin: 0;
-  margin-top: 1rem;
-  line-height: 0;
+  margin-top: -10px;
 }
 
 .time {
   font-size: 0.8rem;
+  margin-top: -22px;
+  margin-bottom: 2rem;
+  color: rgba(74, 67, 5, 0.668);
 }
 
 .reserve {
@@ -114,9 +120,10 @@
   justify-content: center;
   align-items: center;
   border: none;
-  background-color: #ea4c4c;
+  background-color: rgb(74, 67, 5);
   color: #fff;
   padding: 0.5rem;
   margin: auto;
   gap: 0.5rem;
+  border-radius: 0.3rem;
 }

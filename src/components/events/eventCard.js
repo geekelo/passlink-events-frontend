@@ -1,55 +1,72 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import PropTypes from 'prop-types';
 import {
   faCalendarAlt,
   faClock,
   faMicrophone,
-  faAnglesRight,
+  faChair,
 } from '@fortawesome/free-solid-svg-icons';
-
+import '../../stylesheets/mobile-tablets/eventCard.css';
 import '../../stylesheets/desktop/eventCard.css';
 
-function EventCard() {
+function EventCard({ event }) {
+  const {
+    organizer,
+    name,
+    description,
+    location,
+    date,
+    time,
+    speakers,
+  } = event;
+
   return (
     <div className="eventCardContainer">
       <div className="col1">
-        <h2 className="event-title">Global Girls in Tech Girls in Tech</h2>
-        <div className="organizers">
+        <div className="organizer-section">
           <div className="brand-color">&nbsp;</div>
-          <i>by</i>
-          <p>Organizers</p>
+          <p className="organizer">{organizer}</p>
         </div>
+        <h2 className="event-name">{name}</h2>
         <p className="eventcard-description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
+          {description}
         </p>
         <div className="speakers">
           <FontAwesomeIcon icon={faMicrophone} />
-          <p className="speaker-names">James rown, Tumbler Bryan</p>
+          <p>
+            {speakers.map((speaker, speakerId) => (
+              <span className="speaker-names" key={speaker.id}>
+                {speaker.name}
+                {speakerId === speakers.length - 1 ? '.' : ', '}
+              </span>
+            ))}
+          </p>
         </div>
       </div>
       <div className="col2">
-        <p className="location-tag">ONLINE</p>
+        <p className="location-tag">{location}</p>
         <div className="date">
           <p className="date-time-icon">
             <FontAwesomeIcon icon={faCalendarAlt} className="fa-times-thin" />
           </p>
-          <div className="dateText">
-            <p className="date-range">12-11-2024</p>
+          <p className="date-text">{date}</p>
+        </div>
+        <div className="time">
+          <p className="date-time-icon">
+            <FontAwesomeIcon icon={faClock} />
+          </p>
+          <div className="time-text">
+            <p>
+              {time}
+              &nbsp;
+              UTC+1
+            </p>
           </div>
         </div>
-        <p className="time">
-          <div className="date-time-icon">
-            <FontAwesomeIcon icon={faClock} />
-          </div>
-          <div className="time-text">
-            <p>3:00PM</p>
-            <p className="timezone">GMT+1</p>
-          </div>
-        </p>
         <div>
           <button type="button" className="reserve">
             Reserve
-            <FontAwesomeIcon icon={faAnglesRight} />
+            <FontAwesomeIcon icon={faChair} />
           </button>
         </div>
       </div>
@@ -57,5 +74,22 @@ function EventCard() {
   );
 }
 
+// Define proptypes for the component
+EventCard.propTypes = {
+  event: PropTypes.shape({
+    organizer: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+    time: PropTypes.string.isRequired,
+    speakers: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+      }),
+    ).isRequired,
+  }).isRequired,
+};
+
 export default EventCard;
-// Path: src/components/events/eventCards.js
