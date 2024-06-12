@@ -10,6 +10,7 @@ import '../../stylesheets/mobile-tablets/eventCard.css';
 import '../../stylesheets/desktop/eventCard.css';
 
 function EventCard({ event }) {
+  // Destructuring event properties for easier access
   const {
     organizer,
     name,
@@ -23,14 +24,18 @@ function EventCard({ event }) {
   return (
     <div className="eventCardContainer">
       <div className="col1">
+        {/* Organizer section */}
         <div className="organizer-section">
           <div className="brand-color">&nbsp;</div>
           <p className="organizer">{organizer}</p>
         </div>
+        {/* Event name */}
         <h2 className="event-name">{name}</h2>
+        {/* Event description */}
         <p className="eventcard-description">
           {description}
         </p>
+        {/* Speakers section */}
         <div className="speakers">
           <FontAwesomeIcon icon={faMicrophone} />
           <p>
@@ -44,13 +49,16 @@ function EventCard({ event }) {
         </div>
       </div>
       <div className="col2">
+        {/* Event location */}
         <p className="location-tag">{location}</p>
+        {/* Event date */}
         <div className="date">
           <p className="date-time-icon">
             <FontAwesomeIcon icon={faCalendarAlt} className="fa-times-thin" />
           </p>
           <p className="date-text">{date}</p>
         </div>
+        {/* Event time */}
         <div className="time">
           <p className="date-time-icon">
             <FontAwesomeIcon icon={faClock} />
@@ -63,6 +71,7 @@ function EventCard({ event }) {
             </p>
           </div>
         </div>
+        {/* Reserve button */}
         <div>
           <button type="button" className="reserve">
             Reserve
@@ -74,7 +83,7 @@ function EventCard({ event }) {
   );
 }
 
-// Define proptypes for the component
+// Define PropTypes for the component
 EventCard.propTypes = {
   event: PropTypes.shape({
     organizer: PropTypes.string.isRequired,
