@@ -6,6 +6,7 @@ import EventsPage from './components/events/eventsPage';
 import SeatsPage from './components/seats/seatsPage';
 import OrganizersPage from './components/organizers/organizersPage';
 import FooterSection from './components/footer/footerSection';
+import Auth from './components/auth/auth';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <Routes>
           <Route path="/" element={<EventsPage />} />
           <Route path="/events" element={<EventsPage />} />
-          <Route path="/seats" element={<SeatsPage />} />
+          <Route path="/seats" element={<Auth />} />
+          <Route path="/registered-events" element={<SeatsPage />} />
           <Route path="/organizers" element={<OrganizersPage />} />
         </Routes>
         <FooterSection />
