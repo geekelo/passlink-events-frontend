@@ -51,32 +51,34 @@ function EventCard({ event }) {
       <div className="col2">
         {/* Event location */}
         <p className="location-tag">{location}</p>
-        {/* Event date */}
-        <div className="date">
-          <p className="date-time-icon">
-            <FontAwesomeIcon icon={faCalendarAlt} className="fa-times-thin" />
-          </p>
-          <p className="date-text">{date}</p>
-        </div>
-        {/* Event time */}
-        <div className="time">
-          <p className="date-time-icon">
-            <FontAwesomeIcon icon={faClock} />
-          </p>
-          <div className="time-text">
-            <p>
-              {time}
-              &nbsp;
-              UTC+1
+        <div className="cta-section">
+          {/* Event date */}
+          <div className="date">
+            <p className="date-time-icon">
+              <FontAwesomeIcon icon={faCalendarAlt} className="fa-times-thin" />
             </p>
+            <p className="date-text">{date}</p>
           </div>
-        </div>
-        {/* Reserve button */}
-        <div>
-          <button type="button" className="reserve">
-            Reserve
-            <FontAwesomeIcon icon={faChair} />
-          </button>
+          {/* Event time */}
+          <div className="time">
+            <p className="date-time-icon">
+              <FontAwesomeIcon icon={faClock} />
+            </p>
+            <div className="time-text">
+              <p>
+                {time}
+                &nbsp;
+                UTC+1
+              </p>
+            </div>
+          </div>
+          {/* Reserve button */}
+          <div>
+            <button type="button" className="reserve">
+              Reserve
+              <FontAwesomeIcon icon={faChair} />
+            </button>
+          </div>
         </div>
       </div>
     </div>

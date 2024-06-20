@@ -73,11 +73,11 @@ function NavSection() {
         </section>
       </div>
       {/* Token  */}
-      <section className="token-section">
+      <NavLink to="/verify" className="token-section">
         <button type="button" className="token-btn">
           <i className="material-icons token-icon">key</i>
         </button>
-      </section>
+      </NavLink>
     </div>
   );
 }
