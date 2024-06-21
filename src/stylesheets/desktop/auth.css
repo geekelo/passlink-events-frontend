@@ -8,20 +8,30 @@
   margin: auto;
   margin-top: 10%;
   color: aliceblue;
-
-  background-color: #f5f5f5;
   background: hsla(265, 53%, 29%, 1);
 
-  background: linear-gradient(90deg, rgba(74, 67, 5, 0.668) 0%, rgba(241, 198, 80, 0.463) 100%);
-  
-  background: -moz-linear-gradient(90deg, rgba(74, 67, 5, 0.668) 0%, rgba(241, 198, 80, 0.463) 100%);
-  
-  background: -webkit-linear-gradient(90deg, rgba(74, 67, 5, 0.668) 0%, rgba(241, 198, 80, 0.463) 100%);
-  
+  background: linear-gradient(
+    90deg,
+    rgba(74, 67, 5, 0.668) 0%,
+    rgba(241, 198, 80, 0.463) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(74, 67, 5, 0.668) 0%,
+    rgba(241, 198, 80, 0.463) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(74, 67, 5, 0.668) 0%,
+    rgba(241, 198, 80, 0.463) 100%
+  );
+
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
-    border-left: 1px solid rgba(0, 0, 0, 0.041);
-    padding-bottom: 0.9rem;
-    box-sizing: border-box;
+  border-left: 1px solid rgba(0, 0, 0, 0.041);
+  padding-bottom: 0.9rem;
+  box-sizing: border-box;
 }
 
 .authStep {
@@ -71,13 +81,25 @@
   background-color: #f1c550;
   background: hsla(40, 94%, 74%, 1);
 
-background: linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+  background: linear-gradient(
+    90deg,
+    hsla(40, 94%, 74%, 1) 0%,
+    hsla(60, 89%, 72%, 1) 100%
+  );
 
-background: -moz-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(40, 94%, 74%, 1) 0%,
+    hsla(60, 89%, 72%, 1) 100%
+  );
 
-background: -webkit-linear-gradient(90deg, hsla(40, 94%, 74%, 1) 0%, hsla(60, 89%, 72%, 1) 100%);
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(40, 94%, 74%, 1) 0%,
+    hsla(60, 89%, 72%, 1) 100%
+  );
 
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", endColorstr="#F7F779", GradientType=1 );
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", endColorstr="#F7F779", GradientType=1 );
 }
 
 @keyframes moveArrow {
