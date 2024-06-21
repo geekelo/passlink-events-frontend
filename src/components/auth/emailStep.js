@@ -1,20 +1,32 @@
 import PropTypes from 'prop-types';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 function EmailStep({ email, setEmail, onNext }) {
   return (
-    <div>
-      <p>Authenticate Guest</p>
-      <label htmlFor="email">
-        Input your Email
+    <div className="authStep">
+      <h2>LOGIN</h2>
+      <label htmlFor="email" className="authAction">
+        Email:
         <input
+          className="authInput"
           id="email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Email"
+          placeholder="Input your Email correctly"
         />
       </label>
-      <button type="button" onClick={onNext}>Submit</button>
+      <button
+        type="button"
+        onClick={onNext}
+        className="authBtn"
+        disabled={!email.includes('@')}
+      >
+        NEXT
+        &nbsp;
+        <FontAwesomeIcon icon={faArrowRight} className="authBtnIcon" />
+      </button>
     </div>
   );
 }

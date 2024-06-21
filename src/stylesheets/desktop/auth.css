@@ -1,0 +1,134 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  width: 80%;
+  align-items: center;
+  height: 60vh;
+  margin: auto;
+  margin-top: 10%;
+  color: aliceblue;
+  background: hsla(265, 53%, 29%, 1);
+
+  background: linear-gradient(
+    90deg,
+    rgba(74, 67, 5, 0.668) 0%,
+    rgba(241, 198, 80, 0.463) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(74, 67, 5, 0.668) 0%,
+    rgba(241, 198, 80, 0.463) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(74, 67, 5, 0.668) 0%,
+    rgba(241, 198, 80, 0.463) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#432371", endColorstr="#FAAE7B", GradientType=1 );
+  border-left: 1px solid rgba(0, 0, 0, 0.041);
+  padding-bottom: 0.9rem;
+  box-sizing: border-box;
+}
+
+.authStep {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 1rem;
+}
+
+.authAction {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+.authInput {
+  width: 100%;
+  height: 50px;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+
+.authCodeInput {
+  padding-top: 0.7rem;
+  width: 10%;
+  height: 55px;
+  border-radius: 1rem;
+  padding-left: 1rem;
+  font-size: 3rem;
+}
+
+.authCodeInput::placeholder {
+  font-size: 3rem;
+}
+
+.authBtn {
+  width: 90%;
+  height: 50px;
+  border-radius: 1rem;
+  background-color: #f5f5f5;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 0;
+  background-color: #f1c550;
+  background: hsla(40, 94%, 74%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(40, 94%, 74%, 1) 0%,
+    hsla(60, 89%, 72%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(40, 94%, 74%, 1) 0%,
+    hsla(60, 89%, 72%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(40, 94%, 74%, 1) 0%,
+    hsla(60, 89%, 72%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FBD07C", endColorstr="#F7F779", GradientType=1 );
+}
+
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.authBtnIcon {
+  display: inline-block;
+  animation: moveArrow 1s infinite;
+}
+
+.backBtn {
+  background-color: rgba(241, 198, 80, 0);
+  border: 1px solid #f1c550;
+  border-radius: 1rem;
+  width: 90%;
+  color: #f1c550;
+}
+
+.buttonSection {
+  display: flex;
+  width: 90%;
+  gap: 20px;
+}

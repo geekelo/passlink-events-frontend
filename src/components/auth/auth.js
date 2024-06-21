@@ -1,5 +1,8 @@
 import React, { useState, Suspense, lazy } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import '../../stylesheets/desktop/auth.css';
 
 const EmailStep = lazy(() => import('./emailStep'));
 const CodeStep = lazy(() => import('./codeStep'));
@@ -12,22 +15,31 @@ function Auth() {
 
   const handleEmailSubmit = () => {
     // Simulate sending a verification code to the email
-    console.log(`Sending verification code to ${email}`);
+    // console.log(`Sending verification code to ${email}`);
     setStep(2);
+  };
+
+  const handleBackToEmail = () => {
+    // Go back to email input step
+    setStep(1);
   };
 
   const handleCodeSubmit = () => {
     // Simulate verifying the code
-    if (code === '1234') { // Assume '1234' is the correct code for demonstration
+    // console.log(code);
+    if (code === '123456') { // Assume '123456' is the correct code for demonstration
       localStorage.setItem('authToken', 'your-token');
       navigate('/seats');
     } else {
-      alert('Incorrect code. Please try again.');
+      toast.error('Incorrect code. Please try again.', {
+        autoClose: 5000, // Duration in milliseconds
+      });
     }
   };
 
   return (
     <div className="auth">
+      <ToastContainer />
       <Suspense fallback={<div>Loading...</div>}>
         {step === 1 && (
           <EmailStep
@@ -38,7 +50,7 @@ function Auth() {
         )}
         {step === 2 && (
           <CodeStep
-            code={code}
+            onBack={handleBackToEmail}
             setCode={setCode}
             onSubmit={handleCodeSubmit}
           />
